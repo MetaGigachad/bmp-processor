@@ -15,10 +15,10 @@ set(SOURCE_FILES
         filters/filter_pipeline.cpp
         filters/filters.cpp
         exceptions/app_error.cpp)
-add_executable(image_processor main.cpp ${SOURCE_FILES})
-target_include_directories(image_processor PUBLIC core filters exceptions)
+add_executable(bmp_processor main.cpp ${SOURCE_FILES})
+target_include_directories(bmp_processor PUBLIC core filters exceptions)
 
 set(TEST_FILES
         tests/test.cpp)
-add_catch(test_image_processor ${TEST_FILES} ${SOURCE_FILES})
-target_include_directories(test_image_processor PUBLIC core filters exceptions)
+add_catch(test_bmp_processor ${TEST_FILES} ${SOURCE_FILES})
+target_include_directories(test_bmp_processor PUBLIC core filters exceptions)

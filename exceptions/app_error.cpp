@@ -4,7 +4,7 @@
 
 std::map<AppError::ErrorCode, const char*> AppError::error_messages {
     {NotEnoughFileEntries,
-     "Usage: image_processor <input_file> <output_file> [<-filter_name> [filter_params]]"
+     "Usage: bmp_processor <input_file> <output_file> [<-filter_name> [filter_params]]"
      "\nAvailable filters:"
      "\n  -crop <width> <height>          Crops image."
      "\n  -gs                             Applies grayscale filter."

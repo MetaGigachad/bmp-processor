@@ -13,8 +13,8 @@
 
 using namespace std::literals::string_view_literals;
 
-std::string path1 = "../projects/image_processor/examples/example.bmp";
-std::string path2 = "../projects/image_processor/examples/output.bmp";
+std::string path1 = "examples/example.bmp";
+std::string path2 = "examples/output.bmp";
 
 TEST_CASE("FilterParser") {
     size_t argc = 8;
